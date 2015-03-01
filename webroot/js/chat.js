@@ -1,4 +1,4 @@
-var ws = new WebSocket("ws://" + location.host + "/ws")
+var ws = new WebSocket("ws://" + location.host + location.pathname + "ws")
 var area = document.querySelector(".message-area")
 var input = document.querySelector(".input-area")
 input.addEventListener('keydown', function(e) {
