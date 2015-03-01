@@ -15,3 +15,6 @@ ws.onmessage = function(e) {
     div.textContent = message
     area.appendChild(div)
 }
+ws.onclose = function(e) {
+    alert('connection closed')
+}
